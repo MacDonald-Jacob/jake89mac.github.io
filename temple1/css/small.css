@@ -65,7 +65,7 @@ div.news {
     column-rule: 1px solid #ddd;
 }
 
-p {margin: 0;}
+p {margin: 0 0 1rem 0;}
 
 
 footer {
