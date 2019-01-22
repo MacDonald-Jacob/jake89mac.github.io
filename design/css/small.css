@@ -54,7 +54,16 @@ main {
     padding: 0 2%;
     min-height: 10rem;
 }
-
+main figure.myphoto{
+    width: 100%;
+    margin: 0 0 2% 2%;
+    float: right;
+}
+main figure.myphoto img{
+    width:100%;
+}
+main h2 {margin:0 0 0 0; padding: 0 0 0 0;}
+main p {margin: 0 0 0 0; padding: 0 0 2% 0;}
 
 /*----------- FOOTER --------------*/
 footer {
