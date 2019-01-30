@@ -1,0 +1,110 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*--------------BODY-------------------*/
+
+
+
+
+
+
+/*-------------HEADER------------------*/
+header{
+    
+    background-color: #494E6B;
+    color: #ffff;
+    
+}
+
+header img{float: left; margin: 10px; width: 50px; }
+header h1 {margin:0; font-size: 1.5rem;}
+header h2 {color: #985E6D; font-style: italic; margin: 0; font-weight: normal; font-size: 1rem;}
+
+
+
+
+
+/*-----------NAVAGATION----------------*/
+nav{
+    background-color: #985E6D
+}
+nav ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: #98878F;
+    color: black;
+}
+nav ul li.active a {
+    background-color:#192231 ;
+    color: #fff;
+}
+
+
+
+/*-------------MAIN--------------------*/
+main h1 { text-align: center; font-family: 'Quicksand', sans-serif;}
+main img{ width: 100%; height: auto;}
+.container{
+    position:relative;
+}
+.text-block{
+    position: absolute;
+    bottom: -4px;
+    left: 10px;
+    background-color:#985E6D;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+
+}
+main h3{ 
+    margin-top:1;
+    margin-bottom: 10px;
+}
+main p{
+    margin-top:0;
+    margin-bottom: 4px;
+}
+article{
+    background-color: #98878F;
+}
+section{
+    background-color:#494E6B;
+}
+
+
+
+
+
+/*-----------------FOOTER-----------------*/
+footer{
+    background-color:#192231;
+    color:white;
+}
+
+
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
