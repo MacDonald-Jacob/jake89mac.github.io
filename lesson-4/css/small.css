@@ -81,10 +81,13 @@ main p{
     margin-bottom: 4px;
 }
 article{
-    background-color: #98878F;
+    
+    text-align: center;
 }
 section{
-    background-color:#494E6B;
+    
+    color:black;
+    text-align: center;
 }
 
 
@@ -93,7 +96,7 @@ section{
 
 /*-----------------FOOTER-----------------*/
 footer{
-    background-color:#192231;
+    background-color:#494E6D;
     color:white;
 }
 
