@@ -125,8 +125,8 @@ table.b {
     display:none;
     table-layout: auto;
     width:500px;
-    border:none;
-
+    border-spacing:collapse;
+    
 }
 
 th {
@@ -134,11 +134,14 @@ th {
     background-color:#985E6D; 
     text-align:left; 
     padding-left:10px; 
+    
 }
 
 td {
     height:35px;
     padding-left:10px;
+    
+    
 }
 
 /*--------------------------------------------------------*/
