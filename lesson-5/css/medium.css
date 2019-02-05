@@ -23,6 +23,8 @@
     
     
     /*----------- MAIN --------------*/
+    .text-block{display:block;}
+    
     h2.a{display:block;}
     
     table.b{display:block;}

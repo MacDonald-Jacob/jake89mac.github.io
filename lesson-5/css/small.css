@@ -30,7 +30,7 @@ header h1 {
     padding: 10px 0 0;
 }
 
-header h5 {
+header h2 {
     color: white; 
     font-style: italic; 
     margin: 0; 
@@ -84,6 +84,7 @@ main {
 main h1 { 
     font-family: 'Quicksand', sans-serif;
     text-align:left;
+    margin-bottom:2px;
 }
 
 main img { 
@@ -93,6 +94,7 @@ main img {
 .container { position:relative; }
 
 .text-block {
+    display:none;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -114,13 +116,17 @@ main p {
 }
 
 /*--------------------------------------*/
-h2.a{display:none;}
+h2.a{
+    display:none;
+    margin-bottom:2px;
+}
 
 table.b {
     display:none;
     table-layout: auto;
     width:500px;
     border:none;
+
 }
 
 th {
