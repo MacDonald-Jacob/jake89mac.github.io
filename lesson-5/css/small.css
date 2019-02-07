@@ -106,7 +106,6 @@ main img {
 }
 
 main h2 { 
-    
     margin-bottom: 10px;
 }
 
@@ -116,11 +115,11 @@ main p {
 }
 
 /*--------------------------------------*/
-h2.a{
+h2.a {
     display:none;
     margin-bottom:2px;
 }
-table{
+table {
     border-spacing:0;
     border-collapse:collapse;
 }
