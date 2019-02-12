@@ -87,10 +87,13 @@ main h1 {
     margin-bottom:2px;
 }
 
-main img { 
+main figure.myphoto{ 
     width: 100%; 
     height: auto;
+    margin: 0 0 0 0;
 }
+main figure.myphoto img { width: 100%; }
+
 .container { position:relative; }
 
 .text-block {
@@ -101,8 +104,11 @@ main img {
     background: #985E6D;
     opacity:.8;
     color:white;
-    padding-left: 10px;
-    padding-right: 20px;
+    padding: 10px 20px 10px 10px;
+}
+
+.text-block h3 {
+    margin:0 0 5px 0;
 }
 
 main h2 { 
@@ -159,7 +165,7 @@ article h6 {
     margin-top:3px;
 }
 
-article img { margin-bottom:5px; }
+article img { margin-bottom:5px; width:100%;}
 
 /*---------------------------------------------------------*/
 
