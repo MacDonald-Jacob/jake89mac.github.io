@@ -15,11 +15,13 @@
 
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         
+        
 
     </head>
     <body>
         <header class="clearfix">
-            <img src="images/logo2.png" alt="logo">
+            <img src="images/logo.png" alt="logo"
+            srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
             <h1>StormWatch1</h1>
             <div class="motto">
                 <h2>Your local Weather Team</h2>
@@ -27,7 +29,8 @@
         </header>
         
         <nav>
-            <ul >
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="">
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="preston.html">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
@@ -43,7 +46,7 @@
                 <figure class="myphoto">
                     <img src="images/franklinOriginal.jpeg" alt="franklin" sizes="100vw"
                          srcset="images/franklinsmall.jpg 400w,
-                                 images/franklinlarge.jpg 960w">
+                                 images/franklinlarge.jpg 800w">
                 </figure>
                 <div class="text-block">
                     <h3>Weather Summary</h3>
@@ -105,7 +108,11 @@
             <article>
                 <h2>This Day in History</h2>
                 <h6><a href="https://www.history.com/author/history">History.com Editors</a></h6>
-                <img src="images/england1.jpg" alt="sunset">
+                <img src="images/england.jpg" alt="london" sizes="100vw"
+                    srcset="images/england200.jpg 200w,
+                            images/england500.jpg 500w,
+                            images/england800.jpg 800w"
+                    > 
                 <p>On this day in 1952, after a long illness, King George VI of Great Britain and Northern Ireland dies in his sleep at the royal estate at Sandringham. Princess Elizabeth, the oldest of the king’s two daughters and next in line to succeed him, was in Kenya at the time of her father’s death; she was crowned Queen Elizabeth II on June 2, 1953, at age 27.</p>
             </article>
             <hr>
@@ -121,11 +128,15 @@
                 <h5>Email</h5>
                     <p>theweatherman@gmail.com</p>
             </section>
+
         </main>
         
         <footer>
-            &copy; Jacob MacDonald &bull; Tuesday, 5 Febuary 2019
+            &copy; Jacob MacDonald &bull;  
             
         </footer>
+        
+        <script src="scripts/currentdate.js"></script>   
+        <script src="scripts/hamburger.js"></script>
     </body>
 </html>

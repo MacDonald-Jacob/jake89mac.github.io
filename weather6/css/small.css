@@ -35,6 +35,7 @@ header h2 {
     font-style: italic; 
     margin: 0; 
     font-weight: normal;
+    font-size: 22px;
 }
 
 
@@ -43,6 +44,14 @@ header h2 {
 
 
 /*-----------NAVAGATION----------------*/
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
 nav {
     overflow:auto;
     background-color: #985E6D;
@@ -57,23 +66,24 @@ nav ul {
 nav ul li a {
     display: block;
     color: white;
-    padding: .5rem 0;
+    padding: .8rem 2%;
     text-decoration: none;
     font-size: 1rem;
     text-align: center;
+    border-top:1px solid rgba(0,0,0,0.3)
 }
 
 nav ul li a:hover {
-    background-color: #98878F;
+    background-color: rgba(152,135,143,.5);
     color: black;
 }
 
 nav ul li.active a {
-    background-color:#192231 ;
-    color: #fff;
+    background-color: rgba(73,78,107,.5) ;
+    color: white;
 }
 
-
+nav ul.hide {display:none;}
 
 /*-------------MAIN--------------------*/
 main {
