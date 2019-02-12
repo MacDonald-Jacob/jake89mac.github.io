@@ -1,0 +1,200 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*--------------BODY-------------------*/
+
+html, body { font-family:sans-serif; }
+
+body { font-size: 16px; }
+
+
+
+/*-------------HEADER------------------*/
+header {
+    background-color: #494E6B;
+    color: #ffff;
+}
+
+header img {
+    float: left; 
+    margin: 10px; 
+    width: 50px; 
+}
+
+header h1 {
+    margin:0; 
+    font-size: 1.5rem; 
+    padding: 10px 0 0;
+}
+
+header h2 {
+    color: white; 
+    font-style: italic; 
+    margin: 0; 
+    font-weight: normal;
+}
+
+
+
+
+
+
+/*-----------NAVAGATION----------------*/
+nav {
+    overflow:auto;
+    background-color: #985E6D;
+}
+
+nav ul {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #98878F;
+    color: black;
+}
+
+nav ul li.active a {
+    background-color:#192231 ;
+    color: #fff;
+}
+
+
+
+/*-------------MAIN--------------------*/
+main {
+    clear:both;
+    padding: 0 2%;
+    min-height: 10rem;
+}
+main h1 { 
+    font-family: 'Quicksand', sans-serif;
+    text-align:left;
+    margin-bottom:2px;
+}
+
+main img { 
+    width: 100%; 
+    height: auto;
+}
+.container { position:relative; }
+
+.text-block {
+    display:none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: #985E6D;
+    opacity:.8;
+    color:white;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+main h2 { 
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-top:0;
+    margin-bottom: 4px;
+}
+
+/*--------------------------------------*/
+h2.a {
+    display:none;
+    margin-bottom:2px;
+}
+table {
+    border-spacing:0;
+    border-collapse:collapse;
+}
+
+table.b {
+    display:none;
+    table-layout: auto;
+    width:500px;
+    
+    
+}
+
+th {
+    height:35px; 
+    background-color:#985E6D; 
+    text-align:left; 
+    padding-left:10px; 
+    
+}
+
+td {
+    height:35px;
+    padding-left:10px;
+    
+    
+}
+
+/*--------------------------------------------------------*/
+
+
+article { text-align: left; }
+
+article h2 { margin-bottom: 0;}
+
+article h6 { 
+    margin-bottom: 0; 
+    margin-top:3px;
+}
+
+article img { margin-bottom:5px; }
+
+/*---------------------------------------------------------*/
+
+hr { clear:both; }
+
+/*----------------------------------------------------------*/
+
+section {
+    background:#985E6D;
+    color:white;
+    padding:5px 20px;
+}
+
+section h5 { margin-bottom:0; }
+
+section p {
+    font-style:italic; 
+    margin-top:0;
+}
+
+
+
+/*-----------------FOOTER-----------------*/
+footer {
+    background-color:#494E6D;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
