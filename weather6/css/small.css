@@ -61,6 +61,7 @@ nav ul {
     list-style-type:none;
     padding: 0;
     margin: 0;
+    
 }
 
 nav ul li a {
@@ -84,6 +85,9 @@ nav ul li.active a {
 }
 
 nav ul.hide {display:none;}
+
+
+
 
 /*-------------MAIN--------------------*/
 main {
