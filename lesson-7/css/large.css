@@ -22,8 +22,14 @@ nav ul li a{
 }
 
 /*----------- MAIN --------------*/
+   /*gallery page*/
+   div.natureShots figure {
+    flex-basis: 29%;
+}
 
-
+div.natureShots figure:hover {
+    box-shadow:0 0 50px #333;
+}
 
 
 /*----------- FOOTER --------------*/
