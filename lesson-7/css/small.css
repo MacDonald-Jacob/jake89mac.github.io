@@ -194,7 +194,7 @@ section {
 }
 
 section h5 { margin-bottom:0; }
-section img { float: right;}
+section img { float: right; width: 100%;}
 section p {
     font-style:italic; 
     margin-top:0;

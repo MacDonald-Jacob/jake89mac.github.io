@@ -29,8 +29,8 @@
         </header>
         
         <nav>
-            
-            <ul >
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
@@ -61,7 +61,7 @@
 
             </article>
             <hr>
-            <section>
+            <section class="clearfix">
                 <h2>Contact Information</h2>
                 <img src="images/map.png" alt="cokeville map">
 
@@ -69,8 +69,11 @@
         </main>
         
         <footer>
-            &copy; 201x &bull; Jacob MacDonald &bull; 123-555-6789
+            &copy; Jacob MacDonald &bull; <span id="currentDate"></span> 
             
         </footer>
+        <script src="scripts/currentdate.js"></script>   
+        <script src="scripts/hamburger.js"></script>
+        <script>myFunction()</script>
     </body>
 </html>
