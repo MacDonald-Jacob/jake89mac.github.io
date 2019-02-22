@@ -77,9 +77,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1.5);
-    transform: scale(1.2);
     background-color: rgba(73,78,107,.7);
     color: white;
 }
