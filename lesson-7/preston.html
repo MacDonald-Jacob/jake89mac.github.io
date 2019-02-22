@@ -22,7 +22,7 @@
         <header>
             <img src="images/logo2.png" alt="logo">
             <div>   
-                <h1>StormWatch1</h1>
+                <h1>Storm<i>Watch1</i></h1>
                 <div class="motto">
                     <h2>Your local Weather Team</h2>
                 </div>
@@ -55,12 +55,14 @@
                     <p>Partly Cloudy</p>
                     <p>Low 36°</p>
                     <p>High 45°</p>
+                    <p>Wind Speed: 8mph from the West</p>
+                    <p>Feels like: <span id="windChill"></span>°</p>
                 </div>
             </div>
             <h2 class="a">Five Day Forecast</h2>
             <table class="b">
                 
-                <thead>
+                <thead id="table">
                     <tr>
                             <th scope="col">Day</th>
                             <th scope="col">Description</th>
@@ -103,7 +105,7 @@
                 </tbody>
             
             </table>
-
+            
            
         
         
@@ -140,6 +142,6 @@
         
         <script src="scripts/currentdate.js"></script>   
         <script src="scripts/hamburger.js"></script>
-        <script>myFunction()</script>
-    </body>
+        <script src="scripts/windchill.js"></script>
+       
 </html>

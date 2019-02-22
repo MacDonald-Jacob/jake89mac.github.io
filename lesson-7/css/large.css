@@ -22,7 +22,14 @@ nav ul li a{
 }
 
 /*----------- MAIN --------------*/
-   /*gallery page*/
+.text-block{
+    padding: 20px 40px 30px 30px;
+}
+
+
+
+
+/*gallery page*/
    div.natureShots figure {
     flex-basis: 29%;
 }
