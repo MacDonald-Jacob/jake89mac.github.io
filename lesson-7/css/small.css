@@ -20,7 +20,6 @@ header {
     display: grid;
     grid-template-columns: 130px auto;
 }
-header img { shadow: 7px 4px 7px black;}
 header h1 {
     margin:0; 
     padding: 25px 0 0;
@@ -127,9 +126,7 @@ main figure.myphoto img { width: 100%; }
 
 .text-block h3 {
     margin:0 0 10px 0;
-    
     color:#6bcdcd
-    
 }
 
 main h2 { 
@@ -187,7 +184,7 @@ article h6 {
     margin-top:3px;
 }
 
-article img { margin-bottom:5px; width:100%;}
+article img { margin-bottom:5px; width:100%; border-radius:5%;}
 
 /*---------------------------------------------------------*/
 
