@@ -126,7 +126,7 @@ main figure.myphoto img { width: 100%; }
 
 .text-block h3 {
     margin:0 0 10px 0;
-    color:#6bcdcd
+    color:#6bcdcd;
 }
 
 main h2 { 
@@ -162,7 +162,7 @@ thead {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b6c7', endColorstr='#6bcdcd',GradientType=0 ); /* IE6-9 */  
 }
 th,td {
-    padding: 5px;
+    padding: 7px 20px;
     text-align: center;
     border: 1px solid black;
     
