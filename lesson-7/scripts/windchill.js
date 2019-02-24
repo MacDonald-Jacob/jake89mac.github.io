@@ -1,9 +1,13 @@
 function myFunction2(){
-var temp = (36 + 45)/2;
-var speed= Math.pow(8,.16)
-var answer = (35.74 + (0.6215*temp)) - (35.75*speed) + (0.4275*temp*speed)
+    var low = parseFloat(document.getElementById("lowTemp").textContent);
+    var high = parseFloat(document.getElementById("highTemp").textContent);
+    var wind = parseFloat(document.getElementById("windSpeed").textContent);
 
-document.getElementById("windChill").innerHTML = Math.round(answer);
+    var temp = (low + high)/2;
+    var speed= Math.pow(wind,.16)
+    var answer = (35.74 + (0.6215*temp)) - (35.75*speed) + (0.4275*temp*speed)
+
+    document.getElementById("windChill").innerHTML = Math.round(answer);
 }
 myFunction2()
 
