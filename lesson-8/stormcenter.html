@@ -50,7 +50,7 @@
                     <legend>Contact Information</legend>
                     <div class="infobox">
                         <label for="name">Full Name</label>  
-                        <input type="text" id="name" name="fullname" minlength="5" required>
+                        <input type="text" id="name" name="fullname" pattern="{5,}" required>
             
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="user@provider.com">
@@ -106,7 +106,9 @@
                     <label for="message">Additional Information or Comments</label>
                     <textarea id="message" cols="50" rows="5"></textarea>
 
-                    <button type="submit"><a href="thankyou.html">Submit</a></button>
+                    <a href="thankyou.html">
+                    <input type="button" name="button" value="submit">
+                    </a>
                 </fieldset>
             </form>
         </main>
