@@ -44,7 +44,57 @@
         </nav>
         
         <main>
+            <form>
+                <div class="nameBox">
+                    <label for="name">Full Name (minimum of 5 characters):</label><br>  
+                    <input type="text" id="name" name="name" minlength="5">
+                </div>
+
             
+                <div class="emailBox">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" placeholder="user@gmail.com">
+                </div>
+
+                <div class="phoneBox">
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required><br>
+                    <span class="note">Format: 123-456-7890</span>
+                </div>
+
+                <div class="zipcodeBox">
+                    <label for="zipcode">Zip Code</label><br>
+                    <input type="number" id="zipcode" name="zipcode"
+                        required><br>
+                </div>
+
+                <div class="dateBox">
+                    <label for="date">Storm Date</label><br>
+                    <input type="date" id="date" name="date">
+
+                </div>
+
+                <div class="stormtypeBox">
+                    <label for="stormtype">Storm Type</label><br>
+                    <input list="stormtype" id="stormtype" name="stormtype">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>
+
+                <div class="messageBox">
+                    <label for="message">Comments</label><br>
+                    <textarea id="message" cols="80" rows="8"></textarea>
+                </div>
+          
+          
+            </form>
         </main>
         
         <footer>
