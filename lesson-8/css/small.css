@@ -56,8 +56,9 @@ nav {
     background: -moz-linear-gradient(top, #46b6c7 0%, #6bcdcd 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #46b6c7 0%,#6bcdcd 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #46b6c7 0%,#6bcdcd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b6c7', endColorstr='#6bcdcd',GradientType=0 ); /* IE6-9 */}
-
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b6c7', endColorstr='#6bcdcd',GradientType=0 ); /* IE6-9 */
+    
+}
 nav ul {
     list-style-type:none;
     padding: 0;
@@ -228,6 +229,56 @@ div.natureShots figure img {
 div.natureShots figcaption {
     text-align:center;    
 }
+
+/*----------------------------------------------------*/
+/*Form page*/
+form{
+    max-width:480px;
+    margin:50px auto;
+    padding:10px;
+    border: 1px solid white;
+}
+fieldset {
+     background: #d3d3d3;
+     margin-bottom:20px;
+     
+}
+legend{
+    font-size:24px;
+    margin-bottom:10px;
+}
+.infobox label {
+    display:inline-block;
+    margin-bottom: 2px;
+    margin-top:10px;
+   
+}
+
+.infobox input, select, button{
+    margin-top:0px;
+    margin-bottom:10px;
+    padding:0 18px;
+    height: 48px;
+    width:100%;
+    border-radius:4px;
+}
+
+input[type="radio"] {
+    width:3%;
+    margin:20px 50px 40px 0;
+    
+}
+button{
+    margin-top:20px;
+    background: #46b6c7; /* Old browsers */
+    background: -moz-linear-gradient(top, #46b6c7 0%, #6bcdcd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #46b6c7 0%,#6bcdcd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #46b6c7 0%,#6bcdcd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b6c7', endColorstr='#6bcdcd',GradientType=0 ); /* IE6-9 */
+    border-radius:4px;
+}
+
+
 
 /*-----------------FOOTER-----------------*/
 footer {

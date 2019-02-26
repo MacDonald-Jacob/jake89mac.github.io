@@ -19,7 +19,7 @@
         
 
     </head>
-    <body>
+    <body class="infopage">
         <header>
             <img src="images/logo2.png" alt="logo">
             <div>   
@@ -44,56 +44,70 @@
         </nav>
         
         <main>
-            <form>
-                <div class="nameBox">
-                    <label for="name">Full Name (minimum of 5 characters):</label><br>  
-                    <input type="text" id="name" name="name" minlength="5">
-                </div>
-
             
-                <div class="emailBox">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" placeholder="user@gmail.com">
-                </div>
-
-                <div class="phoneBox">
-                    <label for="phone">Phone Number</label><br>
-                    <input type="tel" id="phone" name="phone"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        required><br>
-                    <span class="note">Format: 123-456-7890</span>
-                </div>
-
-                <div class="zipcodeBox">
-                    <label for="zipcode">Zip Code</label><br>
-                    <input type="number" id="zipcode" name="zipcode"
-                        required><br>
-                </div>
-
-                <div class="dateBox">
-                    <label for="date">Storm Date</label><br>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="infobox">
+                    <label for="name">Full Name</label>  
+                    <input type="text" id="name" name="fullname" minlength="5" required>
+            
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="user@provider.com">
+                
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+            
+                    <label for="zipcode">Zip Code</label>
+                    <input type="number" id="zipcode" name="zipcode" required>
+                    </div>
+                </fieldset>    
+            
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <div class="infobox">
+                    <label for="date">Storm Date</label>
                     <input type="date" id="date" name="date">
 
-                </div>
+                    <label for="stormtype">Storm Type</label>
+                        <input list="stormtype" name="stormtype">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
 
-                <div class="stormtypeBox">
-                    <label for="stormtype">Storm Type</label><br>
-                    <input list="stormtype" id="stormtype" name="stormtype">
-                    <datalist id="stormtype">
-                        <option value="Flash Flood"></option>
-                        <option value="Hail"></option>
-                        <option value="Hurricane"></option>
-                        <option value="Thunderstorm"></option>
-                        <option value="Tornado"></option>
-                    </datalist>
-                </div>
+                    <label for="severity">Storm Severity (1 to 10)</label>
+                        <span id="ratingvalue">5</span>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        
+                    <label for="region">Select region</label>
+                    <select name="region">
+                        <option value selected diabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                    </div>
+                    <label for="indanger">User In-Danger?</label><br>
+                    <label class="option1">Yes</label>
+                    <input type="radio" id="option1" name="indanger" value="yes">
+                    <label class="option2">Maybe</label>
+                    <input type="radio" id="option2" name="indanger" value="maybe">
+                    <label for="option3">No</label>
+                    <input type="radio" id="option3" name="indanger" value="no" checked><br>
 
-                <div class="messageBox">
-                    <label for="message">Comments</label><br>
-                    <textarea id="message" cols="80" rows="8"></textarea>
-                </div>
-          
-          
+                    
+                    
+                    
+                    
+                    <label for="message">Additional Information or Comments</label>
+                    <textarea id="message" cols="50" rows="5"></textarea>
+
+                    <button type="submit"><a href="thankyou.html">Submit</a></button>
+                </fieldset>
             </form>
         </main>
         
@@ -105,5 +119,5 @@
         <script src="scripts/currentdate.js"></script>   
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/windchill.js"></script>
-       
+        <script src="scripts/stormseverity.js"></script>
 </html>
