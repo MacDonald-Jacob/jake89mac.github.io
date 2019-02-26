@@ -262,6 +262,10 @@ legend{
     width:100%;
     border-radius:4px;
 }
+.infobox input:hover, select:hover, button:hover{
+    box-shadow: 2px 2px 2px black;
+
+}
 
 input[type="radio"] {
     width:3%;
@@ -277,7 +281,9 @@ button{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b6c7', endColorstr='#6bcdcd',GradientType=0 ); /* IE6-9 */
     border-radius:4px;
 }
-
+button:hover{
+    box-shadow: 5px 5px 10px black;
+}
 
 
 /*-----------------FOOTER-----------------*/
