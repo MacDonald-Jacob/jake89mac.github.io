@@ -256,6 +256,15 @@ form fieldset {
     color: #494e6b;
 }
 
+.warning {
+    font-size:.8rem;
+    color:red;
+    margin-bottom:10px;
+    margin-top:0;
+}
+
+.warning a{color:black;}
+
 form label.top, form div {
     display:block;
     padding-top: 1rem;
@@ -325,10 +334,10 @@ form input.submitBtn:hover{
     box-shadow: 5px 5px 10px black;
 }
 form label.top input:required {
-    border:2px solid red;
+    border-bottom:2px solid red;
 }
 form label.top input:required:valid{
-    border: 2px solid green;
+    border-bottom:2px solid green;
 }
 
 
