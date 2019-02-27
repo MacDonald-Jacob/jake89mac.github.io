@@ -44,8 +44,8 @@
         </nav>
         
         <main>
-            <h1>Have you seen a storm?</h1>
             <form method="get" action="thankyou.html">
+                <h1>Have you seen a storm?</h1>
                 <fieldset>
                     <legend>Contact Information</legend>
                     <div class="infobox">
@@ -70,7 +70,7 @@
                         <input type="date" id="date" name="date">
 
                         <label for="stormtype">Storm Type</label>
-                            <input list="stormtype" name="stormtype">
+                        <input list="stormtype" name="stormtype">
                             <datalist id="stormtype">
                                 <option value="Flash Flood"></option>
                                 <option value="Hail"></option>
@@ -86,11 +86,12 @@
                         <label for="region">Select region</label>
                         <select name="region">
                             <option value selected diabled>Select Region...</option>
+                            <option value="fishhaven">Fish Haven</option>
                             <option value="preston">Preston</option>
                             <option value="sodasprings">Soda Springs</option>
-                            <option value="fishhaven">Fish Haven</option>
                         </select>
                     </div>
+                    
                     <label for="indanger">User In-Danger?</label><br>
                     <label class="option1">Yes</label>
                     <input type="radio" id="option1" name="indanger" value="yes">
@@ -99,13 +100,10 @@
                     <label for="option3">No</label>
                     <input type="radio" id="option3" name="indanger" value="no" checked><br>
 
-                    
-                    
-                    
-                    
                     <label for="message">Additional Information or Comments</label>
                     <textarea id="message" cols="50" rows="5"></textarea>
                 </fieldset>
+                
                 <input type="submit" value="Send Report" class="submitBtn">
             </form>
         </main>
