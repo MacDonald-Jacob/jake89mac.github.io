@@ -235,6 +235,7 @@ div.natureShots figcaption {
 form{
     max-width:480px;
     margin:25px auto;
+
 }
 
 form h1{ margin-bottom:30px;}
@@ -263,17 +264,21 @@ legend{
     width:100%;
     border-radius:4px;
 }
+
 .infobox input:hover, select:hover{
     box-shadow: 2px 2px 2px black;
 
 }
+
+textarea{ width:100%;}
+
 input[required]{
     border:1px solid red;
 }
 
 input[type="radio"] {
-    width:3%;
-    margin:20px 50px 40px 0;
+    width:5%;
+    margin:20px 30px 40px 0;
     
 }
 form input.submitBtn{
