@@ -47,63 +47,43 @@
             <form method="get" action="thankyou.html">
                 <h1>Have you seen a storm?</h1>
                 <fieldset>
-                    <legend>Contact Information</legend>
-                    <div class="infobox">
-                        <label for="name">Full Name</label>  
-                        <input type="text" id="name" name="fullname" pattern="[A-Za-z].{5,}" required>
-            
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="user@provider.com">
-                
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required>
-            
-                        <label for="zipcode">Zip Code</label>
-                        <input type="number" id="zipcode" name="zipcode" required>
-                    </div>
+                    <div class="formheading">Contact Information</div>
+                    <label class ="top">Full Name<input type="text" name="fullName" pattern="[A-Za-z].{5,}" required></label>
+                    <label class="top">Phone Number<input type="tel" name="phone" required></label>
+                    <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="user@provider.com"></label>
+                    <div>Are you In-Danger?</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no" checked>No</label>
                 </fieldset>    
             
                 <fieldset>
-                    <legend>Storm Information</legend>
-                    <div class="infobox">
-                        <label for="date">Storm Date</label>
-                        <input type="date" id="date" name="date">
-
-                        <label for="stormtype">Storm Type</label>
-                        <input list="stormtype" name="stormtype">
-                            <datalist id="stormtype">
-                                <option value="Flash Flood"></option>
-                                <option value="Hail"></option>
-                                <option value="Hurricane"></option>
-                                <option value="Thunderstorm"></option>
-                                <option value="Tornado"></option>
-                            </datalist>
-
-                        <label for="severity">Storm Severity (1 to 10)</label>
-                            <span id="ratingvalue">5</span>
+                    <div class="formheading">Storm Information</div>
+                    <label class="top">Storm Date<input type="date" name="stormDate"></label>
+                    <label class="top">Storm Type<input list="stormType" name="stormType">
+                        <datalist id="stormType">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+                    <label class="top">Storm Severity (1 to 10) <span id="ratingvalue">5</span>
                         <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        
-                        <label for="region">Select region</label>
+                    </label>
+                    <label class="top">Select region
                         <select name="region">
-                            <option value selected diabled>Select Region...</option>
+                            <option value="">Select Region...&#9662;</option>
                             <option value="fishhaven">Fish Haven</option>
                             <option value="preston">Preston</option>
                             <option value="sodasprings">Soda Springs</option>
                         </select>
+                    </label>
                     
-                    
-                    <label for="indanger">User In-Danger?</label><br>
-                    </div>
-                    
-                    <label for="option1">Yes</label>
-                    <input type="radio" id="option1" name="indanger" value="yes">
-                    <label for="option2">Maybe</label>
-                    <input type="radio" id="option2" name="indanger" value="maybe">
-                    <label for="option3">No</label>
-                    <input type="radio" id="option3" name="indanger" value="no" checked><br>
 
-                    <label for="message">Additional Information or Comments</label>
-                    <textarea id="message" cols="50" rows="5"></textarea>
+                    <label class="top">Additional Information or Comments<textarea id="message" cols="50" rows="5"></textarea></label>
                 </fieldset>
                 
                 <input type="submit" value="Send Report" class="submitBtn">
@@ -112,11 +92,12 @@
         
         <footer>
             &copy; Jacob MacDonald &bull; <span id="currentDate"></span>  
-            
         </footer>
         
         <script src="scripts/currentdate.js"></script>   
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/windchill.js"></script>
         <script src="scripts/stormseverity.js"></script>
+    
+    </body>
 </html>

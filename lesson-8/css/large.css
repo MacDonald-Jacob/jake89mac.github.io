@@ -17,6 +17,9 @@
 
 
 /*----------- NAVIGATION --------------*/
+nav {
+    height:35px;
+}
 nav ul li a{
     padding: .5rem 1rem;
 }

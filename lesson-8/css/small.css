@@ -234,54 +234,82 @@ div.natureShots figcaption {
 /*Form page*/
 form{
     max-width:480px;
-    margin:25px auto;
-
+    margin:auto;
 }
 
-form h1{ margin-bottom:30px;}
-
-fieldset {
-     background: #d3d3d3;
-     margin-bottom:20px;
-     
+form h1{ 
+    margin-bottom:30px;
+    text-align:center;
 }
-legend{
+
+form fieldset {
+    background:#d3d3d3;
+    margin: 2rem 0;
+    border-radius:10px;
+    border: 1px solid black;
+}
+
+.formheading{ 
     font-size:24px;
+    margin-top:0;
     margin-bottom:10px;
+    color: #494e6b;
 }
-.infobox label {
-    display:inline-block;
-    margin-bottom: 2px;
-    margin-top:10px;
+
+form label.top, form div {
+    display:block;
+    padding-top: 1rem;
+    font-size: 1rem;
 
 }
 
-.infobox input, select{
-    margin-top:0px;
-    margin-bottom:10px;
-    padding:0 18px;
-    height: 48px;
+form label.top input, form label.top select, form label.top textarea {
+    -webkit-appearance: none;
+    display:block;
+    font-size:1rem;
+    border-radius: 5px;
+    padding: .75rem;
     width:100%;
-    border-radius:4px;
 }
 
-.infobox input:hover, select:hover{
-    box-shadow: 2px 2px 2px black;
+form label.top input[type="range"]::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+    background: #3071A9;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
 
+form label.top input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000031;
+    border: 1px solid #00001E;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+  }
+form label.top textarea{
+    max-width:100%;
+}
+
+form label.sbs{
+    display:block;
+    padding:.75rem 0;
+}
+
+.top input:hover, select:hover{
+    box-shadow: 2px 2px 2px black;
 }
 
 textarea{ width:100%;}
 
-input[required]{
-    border:1px solid red;
-}
-
-input[type="radio"] {
-    width:5%;
-    margin:20px 30px 40px 0;
-    
-}
 form input.submitBtn{
+    margin-bottom:2rem;
     width:100%;
     height:48px;
     background: #46b6c7; /* Old browsers */
@@ -289,12 +317,18 @@ form input.submitBtn{
     background: -webkit-linear-gradient(top, #46b6c7 0%,#6bcdcd 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #46b6c7 0%,#6bcdcd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b6c7', endColorstr='#6bcdcd',GradientType=0 ); /* IE6-9 */
-    border-radius:4px;
+    border-radius:10px;
     font-size:22px;
     
 }
 form input.submitBtn:hover{
     box-shadow: 5px 5px 10px black;
+}
+form label.top input:required {
+    border:2px solid red;
+}
+form label.top input:required:valid{
+    border: 2px solid green;
 }
 
 
