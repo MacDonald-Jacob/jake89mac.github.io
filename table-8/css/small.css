@@ -19,6 +19,10 @@ tbody tr:nth-child(even){ background-color:#e7f0ed;}
 
 tbody tr:nth-child(odd){ background-color: #e7ffed;}
 
+table tbody tr:nth-child(6) td:nth-child(1) {
+    font-style: italic;
+}
+
 thead{
     font-size:150%;
     background:#7fb9c2
