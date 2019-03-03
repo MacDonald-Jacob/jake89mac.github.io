@@ -1,0 +1,47 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    height:35px;
+}
+nav ul li a{
+    padding: .5rem 1rem;
+}
+
+/*----------- MAIN --------------*/
+.text-block{
+    padding: 20px 40px 30px 30px;
+}
+
+
+
+
+/*gallery page*/
+   div.natureShots figure {
+    flex-basis: 29%;
+}
+
+div.natureShots figure:hover {
+    box-shadow:0 0 50px #333;
+}
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
