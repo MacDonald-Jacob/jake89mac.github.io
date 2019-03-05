@@ -94,13 +94,12 @@ nav ul.hide {display:none;}
 /*-------------MAIN--------------------*/
 main {
     clear:both;
-    padding: 0 2%;
     min-height: 10rem;
 }
 main h1 { 
     font-family: 'Quicksand', sans-serif;
     text-align:left;
-    margin-bottom:2px;
+    margin: .8rem 0 .2rem 2% ;
 }
 
 main figure.myphoto{ 
@@ -108,7 +107,11 @@ main figure.myphoto{
     height: auto;
     margin: 0 0 0 0;
 }
-main figure.myphoto img { width: 100%; }
+main figure.myphoto img { 
+    width: 100%; 
+    margin:0;
+    padding:0;
+}
 
 .container { position:relative; }
 .container img { width: 100%; }
@@ -130,12 +133,12 @@ main figure.myphoto img { width: 100%; }
 }
 
 main h2 { 
-    margin-bottom: 10px;
+    margin: .8rem 0 .2rem 2% ;
+
 }
 
 main p {
-    margin-top:0;
-    margin-bottom: 4px;
+    margin: 0 0 4px 2% ;
 }
 
 /*--------------------------------------*/
@@ -148,7 +151,8 @@ table {
     border-spacing:2px;
     border-collapse:collapse;
     border-color:black;
-    padding:5px;
+    margin: 0 0 .2rem 2% ;
+
     
     
 }
@@ -173,16 +177,13 @@ th {
 }
 
 /*--------------------------------------------------------*/
-.homeMain h1{
-    margin-left:1rem;
 
-}
 .towninfo{
     display:flex;
     flex-wrap: wrap;
 }
 .towninfo article {
-    margin: 1rem;
+    margin: .2rem 2%;
     padding:5px;
     border:2px solid #6bcdcd;
     border-radius: 10px;
@@ -203,14 +204,18 @@ th {
 
 article { text-align: left; }
 
-article h2 { margin-bottom: 0;}
+article a { margin: .8rem 0 .2rem 2% ; }
 
 article h6 { 
     margin-bottom: 0; 
     margin-top:3px;
 }
 
-article img { margin-bottom:5px; width:100%; border-radius:5%;}
+article img {
+    margin: .1rem 0 .2rem 2% ;
+    width:100%; 
+    border-radius:5%;
+}
 
 /*---------------------------------------------------------*/
 
