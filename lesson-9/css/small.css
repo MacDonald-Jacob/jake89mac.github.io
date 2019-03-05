@@ -173,7 +173,10 @@ th {
 }
 
 /*--------------------------------------------------------*/
+.homeMain h1{
+    margin-left:1rem;
 
+}
 .towninfo{
     display:flex;
     flex-wrap: wrap;
