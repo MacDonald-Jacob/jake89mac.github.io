@@ -34,6 +34,8 @@ for (var i = 0; i < places.length; i++) {
     var myPara5 = document.createElement('p');
     var myList = document.createElement('ul');
 
+    
+
     myH2.textContent = places[i].name;
     myPara1.textContent = 'Motto: ' + places[i].motto;
     myPara2.textContent = 'Year Founded: ' + places[i].yearFounded;

@@ -179,7 +179,7 @@ th {
     flex-wrap: wrap;
 }
 .towninfo article {
-    margin: 2rem;
+    margin: 1rem;
     padding:5px;
     border:2px solid #6bcdcd;
     border-radius: 10px;
@@ -191,7 +191,11 @@ th {
 .towninfo p{
     margin-bottom:8px;
 }
+.towninfo li{
+    font-size:small;
+    margin-bottom:5px;
 
+}
 /*-------------------------------------------------------*/
 
 article { text-align: left; }
