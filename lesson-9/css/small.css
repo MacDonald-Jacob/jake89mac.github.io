@@ -184,10 +184,16 @@ th {
 }
 .towninfo article {
     width: 300px;
-    margin: .2rem 2%;
+    margin: 2rem 2%;
     padding:5px;
     border:2px solid #6bcdcd;
     border-radius: 10px;
+    box-shadow: 0 0 30px #333;
+    transition: all .2s ease-in-out; 
+}
+
+.towninfo article:hover { transform: scale(1.1); 
+
 }
 .towninfo h2{
     margin-top:0;
@@ -205,8 +211,9 @@ th {
     display:flex;
     margin: 0 auto;
     height:auto;
-    width:250px;
-    }
+    width:280px;
+    border-radius: 5px;
+}
 /*-------------------------------------------------------*/
 
 .tdih { text-align: left; }
