@@ -33,7 +33,30 @@ for (var i = 0; i < places.length; i++) {
     var myPara4 = document.createElement('p');
     var myPara5 = document.createElement('p');
     var myList = document.createElement('ul');
-
+    var myImg = document.createElement('img');
+    
+    if (places[i].name == "Franklin") {
+      myImg.setAttribute('src', 'images/homepage/Franklin1.jpg');
+      myImg.setAttribute('alt', 'Franklin');
+  } else if (places[i].name == "Fish Haven") {
+      myImg.setAttribute('src', 'images/homepage/fishhaven1.jpg');
+      myImg.setAttribute('alt', 'Fish Haven');
+  } else if (places[i].name == "Greenville") {
+      myImg.setAttribute('src','images/homepage/Greenville1.jpg');
+      myImg.setAttribute('alt', 'Greenville');
+  } else if (places[i].name == "Placerton") {
+      myImg.setAttribute('src','images/homepage/placerton1.jpg');
+      myImg.setAttribute('alt', 'Placerton');
+  } else if (places[i].name == "Preston") {
+      myImg.setAttribute('src','images/homepage/preston1.jpg');
+      myImg.setAttribute('alt', 'Preston');
+  } else if (places[i].name == "Soda Springs") {
+      myImg.setAttribute('src','images/homepage/sodasprings1.jpg');
+      myImg.setAttribute('alt', 'Soda Springs');
+  } else if (places[i].name == "Springfield") {
+      myImg.setAttribute('src','images/homepage/springfield1.jpg');
+      myImg.setAttribute('alt', 'Springfield');
+  }
     
 
     myH2.textContent = places[i].name;
@@ -58,6 +81,7 @@ for (var i = 0; i < places.length; i++) {
     myArticle.appendChild(myPara4);
     myArticle.appendChild(myPara5);
     myArticle.appendChild(myList);
+    myArticle.appendChild(myImg);
 
     towninfo.appendChild(myArticle);
 }

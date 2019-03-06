@@ -183,6 +183,7 @@ th {
     flex-wrap: wrap;
 }
 .towninfo article {
+    width: 300px;
     margin: .2rem 2%;
     padding:5px;
     border:2px solid #6bcdcd;
@@ -200,18 +201,24 @@ th {
     margin-bottom:5px;
 
 }
+.towninfo article img {
+    display:flex;
+    margin: 0 auto;
+    height:auto;
+    width:250px;
+    }
 /*-------------------------------------------------------*/
 
-article { text-align: left; }
+.tdih { text-align: left; }
 
-article a { margin: .8rem 0 .2rem 2% ; }
+.tdih a { margin: .8rem 0 .2rem 2% ; }
 
-article h6 { 
+.tdih h6 { 
     margin-bottom: 0; 
     margin-top:3px;
 }
 
-article img {
+.tdih img {
     margin: .1rem 0 .2rem 2% ;
     width:100%; 
     border-radius:5%;
