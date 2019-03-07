@@ -1,30 +1,22 @@
-// Download and store the URL
+var section = document.querySelector('section')
 var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-
-// Create a new request
 var request = new XMLHttpRequest();
 
-// Open the Request (GET makes the network request / URL of the JSON file above
-request.open('Get', requestURL);
-
-// Set response type to JSON
+request.open('GET', requestURL);
 request.responseType = 'json';
-
-// Send the request
 request.send();
 
-// Store the response to the request
 request.onload = function() {
   var townData = request.response;
   showData(townData);
 }
 
-// Create and populate the cards
-
 function showData(jsonObj) {
   var places = jsonObj['towns'];
   
 for (var i = 0; i < places.length; i++) {
+  // this if statement grabs only the defined towns to put on the html. delete the if statement line to grab all towns from json.
+  if (places[i].name == "Preston" || places[i].name == "Soda Springs" || places[i].name == "Fish Haven"){
     var myArticle = document.createElement('article');
     var myH2 = document.createElement('h2');
     var myPara1 = document.createElement('p');
@@ -35,28 +27,16 @@ for (var i = 0; i < places.length; i++) {
     var myList = document.createElement('ul');
     var myImg = document.createElement('img');
     
-    if (places[i].name == "Franklin") {
-      myImg.setAttribute('src', 'images/homepage/Franklin1.jpg');
-      myImg.setAttribute('alt', 'Franklin');
-  } else if (places[i].name == "Fish Haven") {
-      myImg.setAttribute('src', 'images/homepage/fishhaven1.jpg');
-      myImg.setAttribute('alt', 'Fish Haven');
-  } else if (places[i].name == "Greenville") {
-      myImg.setAttribute('src','images/homepage/Greenville1.jpg');
-      myImg.setAttribute('alt', 'Greenville');
-  } else if (places[i].name == "Placerton") {
-      myImg.setAttribute('src','images/homepage/placerton1.jpg');
-      myImg.setAttribute('alt', 'Placerton');
-  } else if (places[i].name == "Preston") {
-      myImg.setAttribute('src','images/homepage/preston1.jpg');
+    if (places[i].name == "Preston") {
+      myImg.setAttribute('src', 'images/homepage/preston1.jpg');
       myImg.setAttribute('alt', 'Preston');
   } else if (places[i].name == "Soda Springs") {
-      myImg.setAttribute('src','images/homepage/sodasprings1.jpg');
+      myImg.setAttribute('src', 'images/homepage/sodasprings1.jpg');
       myImg.setAttribute('alt', 'Soda Springs');
-  } else if (places[i].name == "Springfield") {
-      myImg.setAttribute('src','images/homepage/springfield1.jpg');
-      myImg.setAttribute('alt', 'Springfield');
-  }
+  } else if (places[i].name == "Fish Haven") {
+      myImg.setAttribute('src','images/homepage/fishhaven1.jpg');
+      myImg.setAttribute('alt', 'Fish Haven');
+  } 
     
 
     myH2.textContent = places[i].name;
@@ -83,6 +63,7 @@ for (var i = 0; i < places.length; i++) {
     myArticle.appendChild(myList);
     myArticle.appendChild(myImg);
 
-    towninfo.appendChild(myArticle);
+    section.appendChild(myArticle);
+}
 }
 }

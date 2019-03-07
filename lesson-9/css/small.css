@@ -110,7 +110,6 @@ main figure.myphoto{
 main figure.myphoto img { 
     width: 100%; 
     margin:0;
-    padding:0;
 }
 
 .container { position:relative; }
@@ -186,15 +185,15 @@ th {
     width: 300px;
     margin: 2rem 2%;
     padding:5px;
-    border:2px solid #6bcdcd;
+    border:3px solid #6bcdcd;
     border-radius: 10px;
-    box-shadow: 0 0 30px #333;
+    box-shadow: 0 0 20px #333;
     transition: all .2s ease-in-out; 
 }
 
 .towninfo article:hover { transform: scale(1.1); 
-
 }
+
 .towninfo h2{
     margin-top:0;
     margin-bottom: 10px;
@@ -226,7 +225,7 @@ th {
 }
 
 .tdih img {
-    margin: .1rem 0 .2rem 2% ;
+    margin: .1rem 0 .2rem 0 ;
     width:100%; 
     border-radius:5%;
 }
