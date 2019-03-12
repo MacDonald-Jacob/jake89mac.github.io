@@ -53,10 +53,10 @@
                 </figure>
                 <div class="text-block">
                     <h3>Current Conditions</h3>
-                    <p>Partly Cloudy</p>
-                    <p>Low 36°</p>
-                    <p>High 45°</p>
-                    <p>Wind Speed: 8mph from the West</p>
+                    <p>Currently: <span id="sky">currently</span></p>
+                    <p>Temperature: <span id ="temp">temp</span>°</p>
+                    <p>Humidity: <span id ="humidity">humidity</span>%</p>
+                    <p>Wind Speed: <span id="windSpeed"></span>mph</p>
                     <p>Feels like: <span id="windChill"></span>°</p>
                 </div>
             </div>
@@ -73,34 +73,34 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Monday</td>
-                        <td>Partly Cloudy</td>
-                        <td>36° / 59°</td>
-                        <td>West 8 mph</td>
+                        <td><span id="day1"></span></td>
+                        <td><span id="description1"></span></td>
+                        <td><span id="high1"></span>°/ <span id="low1"></span>°</td>
+                        <td><span id="wind1"></span> mph</td>
                     </tr>
                     <tr>
-                        <td>Tuesday</td>
-                        <td>Sunny</td>
-                        <td>36° / 59°</td>
-                        <td>West 23 mph</td>
+                        <td><span id="day2"></span></td>
+                        <td><span id="description2"></span></td>
+                        <td><span id="high2"></span>° / <span id="low2"></span>°</td>
+                        <td><span id="wind2"></span> mph</td>
                     </tr>
                     <tr>
-                        <td>Wednesday</td>
-                        <td>Snowing</td>
-                        <td>36° / 59°</td>
-                        <td>North 8 mph</td>
+                        <td><span id="day3"></span></td>
+                        <td><span id="description3"></span></td>
+                        <td><span id="high3"></span>° / <span id="low3"></span>°</td>
+                        <td><span id="wind3"></span> mph</td>
                     </tr>
                     <tr>
-                        <td>Thursday</td>
-                        <td>Raining</td>
-                        <td>36° / 59°</td>
-                        <td>East 8 mph</td>
+                        <td><span id="day4"></span></td>
+                        <td><span id="description4"></span></td>
+                        <td><span id="high4"></span>° / <span id="low4"></span>°</td>
+                        <td><span id="wind4"></span> mph</td>
                     </tr>
                     <tr>
-                        <td>Friday</td>
-                        <td>Cloudy</td>
-                        <td>36° / 59°</td>
-                        <td>none</td>
+                        <td><span id="day5"></span></td>
+                        <td><span id="description5"></span></td>
+                        <td><span id="high5"></span>° / <span id="low5"></span>°</td>
+                        <td><span id="wind5"></span> mph</td>
                     </tr>
                    
                 </tbody>
@@ -137,11 +137,14 @@
         </main>
     
         <footer>
+            <p>Weather information provided by <a href ="openweathermap.org"> openweathermap.org </a></p>
             &copy; Jacob MacDonald &bull; <span id="currentDate"></span>  
             
         </footer>
             <script src="scripts/currentdate.js"></script>   
             <script src="scripts/hamburger.js"></script>
             <script src="scripts/windchill.js"></script>
+            <script src="scripts/weather.js"></script>
+            <script src="scripts/forecast.js"></script>
     </body>   
 </html>
