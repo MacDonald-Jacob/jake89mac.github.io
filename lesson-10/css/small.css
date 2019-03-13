@@ -408,7 +408,7 @@ footer {
     text-align:center;
 }
 
-
+footer a:link,footer a:visited {color:white;}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
