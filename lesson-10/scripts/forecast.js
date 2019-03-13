@@ -39,7 +39,7 @@ forecastRequest.onload = function(){
     document.getElementById('wind4').innerHTML = Math.round(forecastInfo.list[28].wind.speed);
     document.getElementById('wind5').innerHTML = Math.round(forecastInfo.list[36].wind.speed);
 
-    var iconcode1 = forecastInfo.list[0].weather[0].icon;
+    var iconcode1 = forecastInfo.list[4].weather[0].icon;
     var icon_path1 = "http://openweathermap.org/img/w/" + iconcode1 + ".png";
     document.getElementById('weather_icon1').src = icon_path1;
 

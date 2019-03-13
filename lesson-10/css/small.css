@@ -182,11 +182,13 @@ tbody {
     border:1px solid white;
     border-top:none;
 }
-tbody td:nth-child(odd){ background-color:#e7f0ed;}
+tbody td:nth-child(odd){ background-color: rgba(107, 205, 205, .1);}
 
 .icon{padding-bottom:0;}
 
+.desc{padding-top:0; padding-bottom:2rem;}
 
+.low{ padding-bottom:2rem; padding-top:0;}
 
 
 /*--------------------------------------------------------*/
