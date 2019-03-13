@@ -132,8 +132,7 @@ main figure.myphoto img {
 }
 
 main h2 { 
-    margin: .8rem 0 .2rem 2% ;
-
+    margin: 2rem 0 .2rem 2% ;
 }
 
 main p {
@@ -163,17 +162,31 @@ thead {
     background: -webkit-linear-gradient(top, #46b6c7 0%,#6bcdcd 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #46b6c7 0%,#6bcdcd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b6c7', endColorstr='#6bcdcd',GradientType=0 ); /* IE6-9 */  
+    
 }
 th,td {
     padding: 7px 20px;
     text-align: center;
-    border: 1px solid black;
+    border-right: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    
     
 }
 th {
    height:45px;
    color: black;
+   border-bottom:none;
 }
+
+tbody { 
+    border:1px solid white;
+    border-top:none;
+}
+tbody td:nth-child(odd){ background-color:#e7f0ed;}
+
+.icon{padding-bottom:0;}
+
+
 
 
 /*--------------------------------------------------------*/
