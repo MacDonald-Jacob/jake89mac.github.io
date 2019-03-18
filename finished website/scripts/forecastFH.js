@@ -1,13 +1,13 @@
 let forecastRequest = new XMLHttpRequest();
 
-forecastRequest.open('GET','http://api.openweathermap.org/data/2.5/forecast?id=5061036&appid=44ae659aedc9547e507e6cd8e21c0f5a&units=imperial', true);
+forecastRequest.open('GET','http://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=44ae659aedc9547e507e6cd8e21c0f5a&units=imperial', true);
 
 forecastRequest.send();
 
 forecastRequest.onload = function(){
     let forecastInfo = JSON.parse(forecastRequest.responseText);
     console.log(forecastInfo);
-
+    
     document.getElementById('description1').innerHTML = forecastInfo.list[6].weather["0"].description;
     document.getElementById('description2').innerHTML = forecastInfo.list[14].weather["0"].description;
     document.getElementById('description3').innerHTML = forecastInfo.list[22].weather["0"].description;

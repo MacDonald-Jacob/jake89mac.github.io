@@ -41,7 +41,94 @@
             </ul>
         </nav>
         <main>
-            <h1>Coming Soon</h1>
+            <h1>Fish Haven</h1>
+            <div class="container">
+                <figure class="myphoto">
+                    <img src="images/fishhaven/websuperman.jpg" alt="wakeboarding on bear lake" sizes="100vw"
+                         srcset="images/fishhaven/websuperman400.jpg 400w,
+                                 images/fishhaven/websuperman1100.jpg 1100w">
+                </figure>
+                <div class="text-block">
+                    <h3>Current Conditions</h3>
+                    <p>Currently: <span id="sky">currently</span></p>
+                    <p>Temperature: <span id ="temp">temp</span>°</p>
+                    <p>Humidity: <span id ="humidity">humidity</span>%</p>
+                    <p>Wind: <span id="windSpeed"></span>mph</p>
+                    <p>Feels like: <span id="windChill"></span>°</p>
+                </div>
+            </div>
+            <h2 class="a">Five Day Forecast</h2>
+            <table class="b">
+                
+                <thead id="table">
+                    <tr>
+                        <th scope="col">Day 1</th>
+                        <th scope="col">Day 2</th>
+                        <th scope="col">Day 3</th>
+                        <th scope="col">Day 4</th>
+                        <th scope="col">Day 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class = "icon"><img src ="images/placeholder.png" alt="current weather" id="weather_icon1"></td>
+                        <td class = "icon"><img src ="images/placeholder.png" alt="current weather" id="weather_icon2"></td>
+                        <td class = "icon"><img src ="images/placeholder.png" alt="current weather" id="weather_icon3"></td>
+                        <td class = "icon"><img src ="images/placeholder.png" alt="current weather" id="weather_icon4"></td>
+                        <td class = "icon"><img src ="images/placeholder.png" alt="current weather" id="weather_icon5"></td>
+                    </tr>
+                    <tr>
+                        <td class = "desc"><span id="description1"></span></td>
+                        <td class = "desc"><span id="description2"></span></td>
+                        <td class = "desc"><span id="description3"></span></td>
+                        <td class = "desc"><span id="description4"></span></td>
+                        <td class = "desc"><span id="description5"></span></td>
+                    </tr>
+                    <tr>
+                        <td>High: <span id="high1"></span>°</td>
+                        <td>High: <span id="high2"></span>°</td>
+                        <td>High: <span id="high3"></span>°</td>
+                        <td>High: <span id="high4"></span>°</td>
+                        <td>High: <span id="high5"></span>°</td>
+                    </tr>
+                    <tr>
+                        <td class = "low">Low: <span id="low1"></span>°</td>
+                        <td class = "low">Low: <span id="low2"></span>°</td>
+                        <td class = "low">Low: <span id="low3"></span>°</td>
+                        <td class = "low">Low: <span id="low4"></span>°</td>
+                        <td class = "low">Low: <span id="low5"></span>°</td>
+                    </tr>
+                    <tr>
+                        <td>Wind: <span id="wind1"></span> mph</td>
+                        <td>Wind: <span id="wind2"></span> mph</td>
+                        <td>Wind: <span id="wind3"></span> mph</td>
+                        <td>Wind: <span id="wind4"></span> mph</td>
+                        <td>Wind: <span id="wind5"></span> mph</td>
+                    </tr>
+                   
+                </tbody>
+            
+            </table>
+            
+           <article class="tdih">
+                <h2>History</h2>
+                <img src="images/fishhaven/fishhavengolf.jpg" alt="golf course in fish haven">
+                <p>Fish Haven, originally named Rush Creek, is an unincorporated community along the shores of Bear Lake in Bear Lake County, Idaho, United States. It is 4 km (2.5 miles) north of the Utah border. The first settlement at Fish Haven was made in 1864. A post office called Fish Haven was established in 1867, and remained in operation until 1962. The community was so named because nearby Bear Lake is a favorite fishing spot.</p>
+            </article>
+            <hr>
+            <section class="contactInfo">
+                <h5>Address:</h5>
+                    <p>96th Floor Weather</p>
+                    <p>1234 Rain Street</p>
+                    <p>Cold Town, North Dakota 27364</p>
+
+                <h5>Phone:</h5>
+                    <p>(123) 555-1234</p>
+
+                <h5>Email</h5>
+                    <p>theweatherman@gmail.com</p>
+            </section>
+
         </main>
         <footer>
                 <p>Weather information provided by <a href ="openweathermap.org"> openweathermap.org </a></p>
@@ -51,8 +138,8 @@
             <script src="scripts/currentdate.js"></script>   
             <script src="scripts/hamburger.js"></script>
             <script src="scripts/windchill.js"></script>
-            <script src="scripts/weather.js"></script>
-            <script src="scripts/forecast.js"></script>
+            <script src="scripts/weatherFH.js"></script>
+            <script src="scripts/forecastFH.js"></script>
 
     </body>
 </html>
