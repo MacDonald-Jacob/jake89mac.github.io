@@ -1,6 +1,6 @@
 let forecastRequest = new XMLHttpRequest();
 
-forecastRequest.open('GET','http://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=44ae659aedc9547e507e6cd8e21c0f5a&units=imperial', true);
+forecastRequest.open('GET','//api.openweathermap.org/data/2.5/forecast?id=5585010&appid=44ae659aedc9547e507e6cd8e21c0f5a&units=imperial', true);
 
 forecastRequest.send();
 
@@ -33,23 +33,23 @@ forecastRequest.onload = function(){
     document.getElementById('wind5').innerHTML = Math.round(forecastInfo.list[38].wind.speed);
 
     var iconcode1 = forecastInfo.list[6].weather[0].icon;
-    var icon_path1 = "http://openweathermap.org/img/w/" + iconcode1 + ".png";
+    var icon_path1 = "//openweathermap.org/img/w/" + iconcode1 + ".png";
     document.getElementById('weather_icon1').src = icon_path1;
 
     var iconcode2 = forecastInfo.list[14].weather[0].icon;
-    var icon_path2 = "http://openweathermap.org/img/w/" + iconcode2 + ".png";
+    var icon_path2 = "//openweathermap.org/img/w/" + iconcode2 + ".png";
     document.getElementById('weather_icon2').src = icon_path2;
 
     var iconcode3 = forecastInfo.list[22].weather[0].icon;
-    var icon_path3 = "http://openweathermap.org/img/w/" + iconcode3 + ".png";
+    var icon_path3 = "//openweathermap.org/img/w/" + iconcode3 + ".png";
     document.getElementById('weather_icon3').src = icon_path3;
 
     var iconcode4 = forecastInfo.list[30].weather[0].icon;
-    var icon_path4 = "http://openweathermap.org/img/w/" + iconcode4 + ".png";
+    var icon_path4 = "//openweathermap.org/img/w/" + iconcode4 + ".png";
     document.getElementById('weather_icon4').src = icon_path4;
 
     var iconcode5 = forecastInfo.list[38].weather[0].icon;
-    var icon_path5 = "http://openweathermap.org/img/w/" + iconcode5 + ".png";
+    var icon_path5 = "//openweathermap.org/img/w/" + iconcode5 + ".png";
     document.getElementById('weather_icon5').src = icon_path5;
 
 }
