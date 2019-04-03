@@ -40,6 +40,43 @@
         </nav>
         
         <main>
+             <form method="get" action="thankYou.html">
+                <h1>Reserve Your Spot Today!</h1>
+                <fieldset>
+                    <div class="formInfo">Customer Information</div>
+                    <label class ="top">Full Name<input type="text" name="fullName" pattern="[A-Za-z].{5,}" required></label>
+                    <label class="top">Phone Number<input type="tel" name="phone" required></label>
+                    <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+                    <label class="top">Select Country
+                        <select name="country">
+                            <option value="">Country Where You Live...&#9662;</option>
+                            <option value="USA">USA</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Canada">Canada</option>
+                        </select>
+                    </label>
+                    <label class="top">Email<input type="email" name="email" placeholder="user@provider.com" required></label>
+                    <div class="formInfo">Where would you like to stay?</div>
+                    <label class="sbs"><input type="radio" name="city" value="rome">Rome</label>
+                    <label class="sbs"><input type="radio" name="city" value="paris">Paris</label>
+                    <label class="sbs"><input type="radio" name="city" value="hongKong">Hong Kong</label>
+                    <label class="sbs"><input type="radio" name="city" value="saltLakeCity">Salt Lake City</label>
+                    <label class="top">Book Date<input type="date" name="bookDate" required></label>
+                    <label class="top">Room Type<input list="roomType" name="roomType" required>
+                        <datalist id="roomType">
+                            <option value="Sweet"></option>
+                            <option value="Double"></option>
+                            <option value="Single"></option>
+                            <option value="Extended-Stay"></option>
+                            <option value="Grand"></option>
+                        </datalist>
+                    </label>
+
+                    <label class="top">Special Accomodations/Comments<textarea id="message" cols="50" rows="5"></textarea></label>
+                </fieldset>
+                
+                <input type="submit" value="Book Your Stay Now!" class="submitBtn2">
+            </form>
         </main>
         
         <footer>
