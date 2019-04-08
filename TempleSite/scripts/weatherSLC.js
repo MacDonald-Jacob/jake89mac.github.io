@@ -1,6 +1,6 @@
 let weatherRequest4 = new XMLHttpRequest();
 
-weatherRequest4.open('GET','http://api.openweathermap.org/data/2.5/weather?id=1819414&appid=44ae659aedc9547e507e6cd8e21c0f5a&units=imperial', true);
+weatherRequest4.open('GET','//api.openweathermap.org/data/2.5/weather?id=1819414&appid=44ae659aedc9547e507e6cd8e21c0f5a&units=imperial', true);
 
 weatherRequest4.send();
 
