@@ -298,6 +298,9 @@ div.serviceLinks {
     display:flex;
     flex-wrap: wrap;
 }
+div.serviceLinks img {
+    width:100%;
+}
 div.serviceLinks figcaption {
     text-align:center;    
 }
@@ -310,5 +313,8 @@ h3{margin-bottom: -13px;}
     display:flex;
     flex-wrap: wrap;
 }
-.rooms figure img {max-width: 400px;}
+.rooms figure img {
+    width: 100%;
+    max-width:400px;
+}
 .rooms figcaption {text-align:center;}
